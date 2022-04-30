@@ -3,14 +3,14 @@
         {
             "name": "FindAWayEditor Editor Win64 Development (FindAWay)",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Unreal_Projects\\FindAWay\\.vscode\\compileCommands_FindAWay.json",
+            "compileCommands": "C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_FindAWay.json",
             "cStandard": "c17",
             "cppStandard": "c++17"
         },
         {
             "name": "Win32",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Unreal_Projects\\FindAWay\\.vscode\\compileCommands_Default.json",
+            "compileCommands": "C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_Default.json",
             "cStandard": "c17",
             "cppStandard": "c++17"
         }

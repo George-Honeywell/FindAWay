@@ -13,5 +13,7 @@ UCLASS()
 class FINDAWAY_API AFindAWayGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+
+	virtual void StartPlay() override;
 	
 };

@@ -1,27 +1,27 @@
 [
 	{
-		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWay.Build.cs",
-		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
+		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWay.Build.cs",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
 		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
 	},
 	{
-		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWay.cpp",
-		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
+		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWay.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
 		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
 	},
 	{
-		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWay.h",
-		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
+		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWay.h",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
 		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
 	},
 	{
-		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWayGameModeBase.cpp",
-		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
+		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWayGameModeBase.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
 		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
 	},
 	{
-		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWayGameModeBase.h",
-		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
+		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\FindAWayGameModeBase.h",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_FindAWay\\FindAWay.210.rsp\"",
 		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
 	}
 ]

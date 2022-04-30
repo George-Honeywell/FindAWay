@@ -5,7 +5,7 @@
 			"name": "FindAWay (Debug)",
 			"request": "launch",
 			"preLaunchTask": "FindAWay Win64 Debug Build",
-			"program": "C:\\Unreal_Projects\\FindAWay\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"program": "C:\\Unreal_Projects\\FindAWay\\FindAWay\\Binaries\\Win64\\UE4-Win64-Debug.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.27",
@@ -18,7 +18,7 @@
 			"name": "FindAWay (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "FindAWay Win64 DebugGame Build",
-			"program": "C:\\Unreal_Projects\\FindAWay\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"program": "C:\\Unreal_Projects\\FindAWay\\FindAWay\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.27",
@@ -31,7 +31,7 @@
 			"name": "FindAWay (Development)",
 			"request": "launch",
 			"preLaunchTask": "FindAWay Win64 Development Build",
-			"program": "C:\\Unreal_Projects\\FindAWay\\Binaries\\Win64\\UE4.exe",
+			"program": "C:\\Unreal_Projects\\FindAWay\\FindAWay\\Binaries\\Win64\\UE4.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.27",
@@ -44,7 +44,7 @@
 			"name": "FindAWay (Shipping)",
 			"request": "launch",
 			"preLaunchTask": "FindAWay Win64 Shipping Build",
-			"program": "C:\\Unreal_Projects\\FindAWay\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"program": "C:\\Unreal_Projects\\FindAWay\\FindAWay\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.27",
@@ -57,7 +57,7 @@
 			"name": "FindAWay (Test)",
 			"request": "launch",
 			"preLaunchTask": "FindAWay Win64 Test Build",
-			"program": "C:\\Unreal_Projects\\FindAWay\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"program": "C:\\Unreal_Projects\\FindAWay\\FindAWay\\Binaries\\Win64\\UE4-Win64-Test.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.27",
@@ -72,7 +72,7 @@
 			"preLaunchTask": "FindAWayEditor Win64 Debug Build",
 			"program": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
 			"args": [
-				"C:\\Unreal_Projects\\FindAWay\\FindAWay.uproject"
+				"C:\\Unreal_Projects\\FindAWay\\FindAWay\\FindAWay.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.27",
 			"stopAtEntry": false,
@@ -86,7 +86,7 @@
 			"preLaunchTask": "FindAWayEditor Win64 DebugGame Build",
 			"program": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
 			"args": [
-				"C:\\Unreal_Projects\\FindAWay\\FindAWay.uproject"
+				"C:\\Unreal_Projects\\FindAWay\\FindAWay\\FindAWay.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.27",
 			"stopAtEntry": false,
@@ -100,7 +100,7 @@
 			"preLaunchTask": "FindAWayEditor Win64 Development Build",
 			"program": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Binaries\\Win64\\UE4Editor.exe",
 			"args": [
-				"C:\\Unreal_Projects\\FindAWay\\FindAWay.uproject"
+				"C:\\Unreal_Projects\\FindAWay\\FindAWay\\FindAWay.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.27",
 			"stopAtEntry": false,
@@ -117,7 +117,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=C:\\Unreal_Projects\\FindAWay\\FindAWay.uproject",
+				"-project=C:\\Unreal_Projects\\FindAWay\\FindAWay\\FindAWay.uproject",
 				"-game",
 				"-engine"
 			],
