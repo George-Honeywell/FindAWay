@@ -15,7 +15,9 @@ AMainCharacter::AMainCharacter()
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	check(GEngine != nullptr)
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("[DEBUG] Using MainCharacter Class."));
 }
 
 // Called every frame
@@ -29,6 +31,24 @@ void AMainCharacter::Tick(float DeltaTime)
 void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	// Axis mappings for movement
+	PlayerInputComponent->BindAxis("MoveForward", this, &AMainCharacter::MoveForward);
+	PlayerInputComponent->BindAxis("MoveRight", this, &AMainCharacter::MoveRight);
 
+	PlayerInputComponent->BindAxis("Turn", this, &AMainCharacter::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("LookUp", this, &AMainCharacter::AddControllerPitchInput);
+}
+
+void AMainCharacter::MoveForward(float value)
+{
+		// Find out which way is FORWARD
+	FVector direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::X);
+	AddMovementInput(direction, value);
+}
+
+void AMainCharacter::MoveRight(float value)
+{
+	FVector direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::Y);
+	AddMovementInput(direction, value);
 }
 
