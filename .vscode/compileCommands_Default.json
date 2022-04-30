@@ -5,6 +5,11 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
 	},
 	{
+		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\Private\\\\CrosshairHUD.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_Default\\FindAWay.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
 		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\Private\\\\FindAWay.cpp",
 		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_Default\\FindAWay.210.rsp\"",
 		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
@@ -16,6 +21,11 @@
 	},
 	{
 		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\Private\\\\MainCharacter.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_Default\\FindAWay.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Unreal_Projects\\\\FindAWay\\\\FindAWay\\\\Source\\\\FindAWay\\\\Public\\\\CrosshairHUD.h",
 		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe @\"C:\\Unreal_Projects\\FindAWay\\FindAWay\\.vscode\\compileCommands_Default\\FindAWay.210.rsp\"",
 		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
 	},
