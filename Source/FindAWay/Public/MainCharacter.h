@@ -5,8 +5,12 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 
-#include "Camera/CameraComponent.h"
-#include "Components/CapsuleComponent.h"
+#include "Camera/CameraComponent.h"				// For Camera Component
+#include "Components/CapsuleComponent.h"		// For Capsule Component
+#include "Components/SceneComponent.h"			// For GetComponentLocation
+#include "Engine/Engine.h"
+
+#include "DrawDebugHelpers.h"	// For Raycast Debug Line
 
 #include "MainCharacter.generated.h"
 
@@ -22,6 +26,12 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UFUNCTION()
+	void Raycast();
+
+	UPROPERTY(VisibleAnywhere)
+	USceneComponent* sceneComp = nullptr;
 
 public:	
 	// Called every frame
@@ -41,5 +51,11 @@ public:
 	// Handles input for moving left and right
 	UFUNCTION()
 	void MoveRight(float value);
+
+private:
+	UPROPERTY(EditAnywhere)
+	float reachDistance;
+
+	UWorld* worldRef = GetWorld();
 
 };

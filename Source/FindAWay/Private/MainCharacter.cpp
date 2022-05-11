@@ -28,7 +28,7 @@ void AMainCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	check(GEngine != nullptr)
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("[DEBUG] Using MainCharacter Class."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("[DEBUG] Using MainCharacter Class."));
 }
 
 // Called every frame
@@ -36,6 +36,24 @@ void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FHitResult hit;
+	FVector traceStart = CameraComponent->GetComponentLocation();
+	FRotator rotation = GetControlRotation();
+	FVector traceEnd = traceStart + rotation.Vector() * reachDistance;
+	worldRef->LineTraceSingleByChannel(hit, traceStart, traceEnd, ECollisionChannel::ECC_GameTraceChannel1);
+	DrawDebugLine(worldRef, traceStart, traceEnd, FColor::Red, false, 3.0f, 0, 3.0f);
+	DrawDebugPoint(worldRef, hit.Location, 20.0f ,FColor::Green, false, 3.0f);
+
+
+	AActor* hitActor = hit.GetActor();
+	if(hitActor != nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Raycast Fired. Hit Actor %s"), *hitActor->GetName());
+	} 
+	else 
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Raycast Fired. No Actor Hit."));
+	}
 }
 
 // Called to bind functionality to input
@@ -48,11 +66,13 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 	PlayerInputComponent->BindAxis("Turn", this, &AMainCharacter::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookUp", this, &AMainCharacter::AddControllerPitchInput);
+
+	PlayerInputComponent->BindAction("FireCast", EInputEvent::IE_Pressed, this, &AMainCharacter::Raycast);
 }
 
 void AMainCharacter::MoveForward(float value)
 {
-		// Find out which way is FORWARD
+	// Find out which way is FORWARD
 	FVector direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::X);
 	AddMovementInput(direction, value);
 }
@@ -63,3 +83,25 @@ void AMainCharacter::MoveRight(float value)
 	AddMovementInput(direction, value);
 }
 
+void AMainCharacter::Raycast()
+{
+	// UWorld* worldRef = GetWorld();
+	// FHitResult hit;
+	// FVector traceStart = CameraComponent->GetComponentLocation();
+	// FRotator rotation = GetControlRotation();
+	// FVector traceEnd = traceStart + rotation.Vector() * reachDistance;
+	// worldRef->LineTraceSingleByChannel(hit, traceStart, traceEnd, ECollisionChannel::ECC_GameTraceChannel1);
+	// DrawDebugLine(worldRef, traceStart, traceEnd, FColor::Red, false, 3.0f, 0, 3.0f);
+	// DrawDebugPoint(worldRef, hit.Location, 20.0f ,FColor::Green, false, 3.0f);
+
+
+	// AActor* hitActor = hit.GetActor();
+	// if(hitActor != nullptr)
+	// {	
+	// 	UE_LOG(LogTemp, Warning, TEXT("Raycast Fired. Hit Actor %s"), *hitActor->GetName());
+	// } 
+	// else 
+	// {
+	// 	UE_LOG(LogTemp, Warning, TEXT("Raycast Fired. No Actor Hit."));
+	// }
+}
