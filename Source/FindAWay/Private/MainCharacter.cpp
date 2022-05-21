@@ -41,7 +41,7 @@ void AMainCharacter::Tick(float DeltaTime)
 	FRotator rotation = GetControlRotation();
 	FVector traceEnd = traceStart + rotation.Vector() * reachDistance;
 	worldRef->LineTraceSingleByChannel(hit, traceStart, traceEnd, ECollisionChannel::ECC_GameTraceChannel1);
-	DrawDebugLine(worldRef, traceStart, traceEnd, FColor::Red, false, 3.0f, 0, 3.0f);
+	// DrawDebugLine(worldRef, traceStart, traceEnd, FColor::Red, false, 3.0f, 0, 3.0f);
 	DrawDebugPoint(worldRef, hit.Location, 20.0f ,FColor::Green, false, 3.0f);
 
 
@@ -67,7 +67,8 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("Turn", this, &AMainCharacter::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookUp", this, &AMainCharacter::AddControllerPitchInput);
 
-	PlayerInputComponent->BindAction("FireCast", EInputEvent::IE_Pressed, this, &AMainCharacter::Raycast);
+	//PlayerInputComponent->BindAction("FireCast", EInputEvent::IE_Pressed, this, &AMainCharacter::Raycast);
+	PlayerInputComponent->BindAction("Interact", EInputEvent::IE_Pressed, this, &AMainCharacter::Interact);
 }
 
 void AMainCharacter::MoveForward(float value)
@@ -81,6 +82,11 @@ void AMainCharacter::MoveRight(float value)
 {
 	FVector direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::Y);
 	AddMovementInput(direction, value);
+}
+
+void AMainCharacter::Interact()
+{
+	UE_LOG(LogTemp, Warning, TEXT("[DEBUG] - Interaction Button Pressed."));
 }
 
 void AMainCharacter::Raycast()

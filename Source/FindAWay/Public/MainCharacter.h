@@ -8,6 +8,7 @@
 #include "Camera/CameraComponent.h"				// For Camera Component
 #include "Components/CapsuleComponent.h"		// For Capsule Component
 #include "Components/SceneComponent.h"			// For GetComponentLocation
+#include "TESTActor.h"
 #include "Engine/Engine.h"
 
 #include "DrawDebugHelpers.h"	// For Raycast Debug Line
@@ -52,10 +53,16 @@ public:
 	UFUNCTION()
 	void MoveRight(float value);
 
+	UFUNCTION()
+		void Interact();
+
 private:
 	UPROPERTY(EditAnywhere)
 	float reachDistance;
 
 	UWorld* worldRef = GetWorld();
+
+	UPROPERTY()
+		ATESTActor* testActor;
 
 };
